@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-API_ENPOINT =os.getenv('API_ENPOINT')
+API_ENPOINT ='https://devapi.beyondchats.com/api/get_message_with_sources'
 @app.post("/get_citations",response_model=List[Dict[str,str]])
 def get_citations(request:Request):
     response = requests.get(API_ENPOINT)
