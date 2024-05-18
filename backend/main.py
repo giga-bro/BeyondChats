@@ -34,8 +34,7 @@ def get_citations(request:Request):
             for source in item['source']:
                 if len(source['link']) > 0:
                     if 'origin' in request.headers:
-                        if request.headers['origin'] == 'http://localhost:5173' :
-                            citations.append(source)
+                        citations.append(source)
                     else:
                         citations.append({'id':source['id'],'link':source['link']})
     return citations
