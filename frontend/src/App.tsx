@@ -7,7 +7,7 @@ const App: React.FC = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.post('http://localhost:8000/get_citations', {
+      const res = await axios.post('https://beyondchats.onrender.com/get_citations', {
         headers: {
           'origin': 'http://localhost:5173',
         }
