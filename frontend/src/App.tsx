@@ -50,7 +50,7 @@ const App: React.FC = () => {
                   </h5>
                   <p className="mt-2 font-normal text-gray-700 lg:text-lg text-xs dark:text-gray-400">
                     {citation?.context?.length > 100
-                      ? citation?.context?.slice(0, 150) + '...'
+                      ? citation?.context?.slice(0, 100) + '...'
                       : citation?.context}
                   </p>
                 </div>
